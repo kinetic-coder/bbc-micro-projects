@@ -1,18 +1,18 @@
+input.onButtonPressed(Button.A, function () {
+    radio.sendString("GO")
+    basic.showString("GO")
+    basic.pause(1000)
+    basic.clearScreen()
+})
 input.onGesture(Gesture.TiltLeft, function () {
     basic.showString(">")
     radio.sendString(">")
     basic.pause(1000)
     basic.clearScreen()
 })
-input.onGesture(Gesture.ScreenUp, function () {
+input.onButtonPressed(Button.B, function () {
     basic.showString("STOP")
     radio.sendString("STOP")
-    basic.pause(1000)
-    basic.clearScreen()
-})
-input.onGesture(Gesture.ScreenDown, function () {
-    basic.showString("GO")
-    radio.sendString("GO")
     basic.pause(1000)
     basic.clearScreen()
 })
