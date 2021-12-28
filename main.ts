@@ -1,24 +1,24 @@
-input.onGesture(Gesture.FreeFall, function () {
-    basic.showString("GO")
-    radio.sendString("MOVE-FORWARD")
-    basic.pause(1000)
-    basic.clearScreen()
-})
 input.onGesture(Gesture.TiltLeft, function () {
-    basic.showString("L")
-    radio.sendString("TURN-LEFT")
+    basic.showString(">")
+    radio.sendString(">")
     basic.pause(1000)
     basic.clearScreen()
 })
-input.onGesture(Gesture.Shake, function () {
+input.onGesture(Gesture.ScreenUp, function () {
     basic.showString("STOP")
     radio.sendString("STOP")
     basic.pause(1000)
     basic.clearScreen()
 })
+input.onGesture(Gesture.ScreenDown, function () {
+    basic.showString("GO")
+    radio.sendString("GO")
+    basic.pause(1000)
+    basic.clearScreen()
+})
 input.onGesture(Gesture.TiltRight, function () {
-    basic.showString("R")
-    radio.sendString("TURN-RIGHT")
+    basic.showString("<")
+    radio.sendString("<")
     basic.pause(1000)
     basic.clearScreen()
 })
