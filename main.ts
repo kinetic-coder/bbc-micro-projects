@@ -16,8 +16,5 @@ input.onGesture(Gesture.TiltRight, function () {
 })
 radio.setGroup(50)
 basic.forever(function () {
-    radio.sendString("" + (input.acceleration(Dimension.X)))
-    radio.sendString("" + (input.acceleration(Dimension.Y)))
-    basic.showString("" + (input.acceleration(Dimension.X)))
-    basic.showString("" + (input.acceleration(Dimension.Y)))
+	
 })
