@@ -1,26 +1,18 @@
 input.onButtonPressed(Button.A, function () {
-    radio.sendString("GO")
+    radio.sendString("G")
     basic.showString("GO")
-    basic.pause(1000)
-    basic.clearScreen()
 })
 input.onGesture(Gesture.TiltLeft, function () {
-    basic.showString(">")
-    radio.sendString(">")
-    basic.pause(1000)
-    basic.clearScreen()
+    radio.sendString("<")
+    basic.showString("<")
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("STOP")
     radio.sendString("STOP")
-    basic.pause(1000)
-    basic.clearScreen()
+    basic.showString("S")
 })
 input.onGesture(Gesture.TiltRight, function () {
-    basic.showString("<")
-    radio.sendString("<")
-    basic.pause(1000)
-    basic.clearScreen()
+    basic.showString(">")
+    radio.sendString(">")
 })
 radio.setGroup(50)
 basic.forever(function () {
