@@ -6,6 +6,10 @@ input.onGesture(Gesture.TiltLeft, function () {
     radio.sendString("<")
     basic.showString("<")
 })
+input.onButtonPressed(Button.AB, function () {
+    radio.sendString("B")
+    basic.showString("B")
+})
 input.onButtonPressed(Button.B, function () {
     radio.sendString("S")
     basic.showString("S")
